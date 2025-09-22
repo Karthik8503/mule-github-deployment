@@ -1,4 +1,4 @@
-name: Cloudhub 2.0 Deployment
+name: Cloudhub Deployment
 
 on:
   push:
