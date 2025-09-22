@@ -22,7 +22,7 @@ jobs:
         cache: maven
         
     - name: Build and deploy to exchange
-      run: mvn clean deploy --file pom.xml .maven/settings.xml
+      run: mvn clean deploy --file pom.xml -s .maven/settings.xml
 
     - name: Build and deploy to cloudHub 2.0
-      run: mvn clean deploy -DmuleDeploy --file pom.xml .maven/settings.xml
+      run: mvn clean deploy -DmuleDeploy --file pom.xml -s .maven/settings.xml
