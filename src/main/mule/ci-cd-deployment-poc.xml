@@ -21,6 +21,14 @@ payload]]></ee:set-payload>
 		<foreach doc:name="For Each" doc:id="111efc6a-a0b0-4ff4-8fa6-af8b78bc916c" >
 			<logger level="INFO" doc:name="Logger" doc:id="73331ba0-0cdd-4f42-9586-04063cfb6b31" message="#[payload]"/>
 		</foreach>
+		<ee:transform doc:name="Transform Message" doc:id="10508947-8d79-46ed-ab5c-7f758627f6ae" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/java
+---
+payload]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
 		<logger level="INFO" doc:name="Logger" doc:id="af74cfed-4014-4231-b22c-4837d05e28c8" message="#[payload]"/>
 	</flow>
 </mule>
