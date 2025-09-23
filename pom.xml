@@ -6,7 +6,7 @@
 
 	<groupId>a34d6d0c-0cb8-442d-bb6c-034eb7a6fcfd</groupId>
 	<artifactId>ci-cd-deployment-poc</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.1</version>
 	<packaging>mule-application</packaging>
 
 	<name>ci-cd-deployment-poc</name>
